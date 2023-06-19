@@ -22,8 +22,8 @@ session.setAttribute("address", "수원시팔달구");
       <td width="5%"><b>주소</b></td>
    </tr>
    <tr align="center">
-      <td>${id } </td>
-      <td>${pwd } </td>
+      <td>${id} </td>
+      <td>${pwd} </td>
       <td>${name} </td>
       <td>${email}</td>
       <td>${address}</td>
