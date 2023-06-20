@@ -16,8 +16,8 @@
 <h2>escapeXml 변환하기</h2>
 <h2>
 <pre>
-  <c:out  value="&lt;" escapeXml="true" />  //&lt
-  <c:out  value="&lt;" escapeXml="false" /> // <
+  <c:out  value="&lt;" escapeXml="true" />
+  <c:out  value="&lt;" escapeXml="false" />
  
   <c:out  value="&gt;" escapeXml="true" />
   <c:out  value="&gt;" escapeXml="false" />
@@ -25,7 +25,7 @@
   <c:out  value="&amp;" escapeXml="true" />
   <c:out  value="&amp;" escapeXml="false" />
 
-<c:out  value="&#039;" escapeXml="true" />
+  <c:out  value="&#039;" escapeXml="true" />
   <c:out  value="&#039;" escapeXml="false" />
  
   <c:out  value="&#034;" escapeXml="true" />
