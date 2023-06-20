@@ -24,9 +24,11 @@ dataList.add("안녕하세요!!");
 	<c:forEach var="i" begin="1" end="10" step="1">
 		5 * ${i} = ${5*i}<br>
 	</c:forEach>
+	<br>
 	<c:forEach var="data" items="${list}">
 		${data}<br>
 	</c:forEach>
+	<br>
 	<%-- <c:forEach var="data" items="${dataList}">
 		${data}<br>
 	</c:forEach> c:set의 필요성--%>
