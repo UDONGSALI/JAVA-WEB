@@ -47,6 +47,16 @@
   </servlet>
   <servlet-mapping>
     <servlet-name>jsonServlet1</servlet-name>
-    <url-pattern>/jsonServlet1</url-pattern>
+    <url-pattern>/json</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>jsonServlet2</display-name>
+    <servlet-name>jsonServlet2</servlet-name>
+    <servlet-class>sec03.ex02.jsonServlet2</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>jsonServlet2</servlet-name>
+    <url-pattern>/json2</url-pattern>
   </servlet-mapping>
 </web-app>
