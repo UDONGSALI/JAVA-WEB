@@ -39,4 +39,14 @@
     <servlet-name>MemberServlet</servlet-name>
     <url-pattern>/mem</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>jsonServlet1</display-name>
+    <servlet-name>jsonServlet1</servlet-name>
+    <servlet-class>sec03.ex01.jsonServlet1</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>jsonServlet1</servlet-name>
+    <url-pattern>/jsonServlet1</url-pattern>
+  </servlet-mapping>
 </web-app>
