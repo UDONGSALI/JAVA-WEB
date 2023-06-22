@@ -19,4 +19,24 @@
     <servlet-name>AjaxTest1</servlet-name>
     <url-pattern>/AjaxTest1</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>AjaxTest2</display-name>
+    <servlet-name>AjaxTest2</servlet-name>
+    <servlet-class>sec01.ex01.AjaxTest2</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AjaxTest2</servlet-name>
+    <url-pattern>/AjaxTest2</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>MemberServlet</display-name>
+    <servlet-name>MemberServlet</servlet-name>
+    <servlet-class>sec02.ex01.MemberServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MemberServlet</servlet-name>
+    <url-pattern>/mem</url-pattern>
+  </servlet-mapping>
 </web-app>
