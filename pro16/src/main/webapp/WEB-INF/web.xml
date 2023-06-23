@@ -59,4 +59,34 @@
     <servlet-name>jsonServlet2</servlet-name>
     <url-pattern>/json2</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>jsonServlet3</display-name>
+    <servlet-name>jsonServlet3</servlet-name>
+    <servlet-class>sec03.ex01.jsonServlet3</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>jsonServlet3</servlet-name>
+    <url-pattern>/jsonServlet3</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>jsonServlet</display-name>
+    <servlet-name>jsonServlet</servlet-name>
+    <servlet-class>sec03.ex01.jsonServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>jsonServlet</servlet-name>
+    <url-pattern>/jsonServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>jsonServlet5</display-name>
+    <servlet-name>jsonServlet5</servlet-name>
+    <servlet-class>sec03.ex01.jsonServlet5</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>jsonServlet5</servlet-name>
+    <url-pattern>/json3</url-pattern>
+  </servlet-mapping>
 </web-app>
