@@ -19,4 +19,14 @@
     <servlet-name>MemberControler</servlet-name>
     <url-pattern>/mem.do</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>MemberServlet</display-name>
+    <servlet-name>MemberServlet</servlet-name>
+    <servlet-class>sec02.ex02.MemberServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MemberServlet</servlet-name>
+    <url-pattern>/mem</url-pattern>
+  </servlet-mapping>
 </web-app>
