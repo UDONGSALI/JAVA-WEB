@@ -29,4 +29,14 @@
     <servlet-name>MemberServlet</servlet-name>
     <url-pattern>/mem</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>BoardController</display-name>
+    <servlet-name>BoardController</servlet-name>
+    <servlet-class>sec03.ex02.BoardController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>BoardController</servlet-name>
+    <url-pattern>/board/*</url-pattern>
+  </servlet-mapping>
 </web-app>

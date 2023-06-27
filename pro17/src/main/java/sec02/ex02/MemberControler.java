@@ -60,14 +60,14 @@ public class MemberControler extends HttpServlet {
 		    	 request.setAttribute("memInfo", memInfo);
 		    	 nextPage="/test03/modMemberForm.jsp";
 			} else if(action.equals("/modMember.do")){
-		    	 String id=request.getParameter("id");
-		    	 String pwd=request.getParameter("pwd");
-		    	 String name= request.getParameter("name");
-	                       	 String email= request.getParameter("email");
-		    	 MemberVO memberVO = new MemberVO(id, pwd, name, email);
-		    	 memberDAO.modMember(memberVO);
-		    	 request.setAttribute("msg", "modified");
-		    	 nextPage="/member/listMembers.do";
+		         String id=request.getParameter("id");
+		         String pwd=request.getParameter("pwd");
+		         String name=request.getParameter("name");
+		         String email=request.getParameter("email");
+		         MemberVO memberVO= new MemberVO(id, pwd, name, email);
+		         memberDAO.modMember(memberVO);
+		         request.setAttribute("msg", "modified");
+		         nextPage="/member/listMembers.do";
 			}else if(action.equals("/delMember.do")){
 				String id = request.getParameter("id");			
 				memberDAO.delMember(id);
