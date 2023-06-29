@@ -1,4 +1,4 @@
-package sec03.brd04;
+package sec03.brd07;
 
 import java.net.URLEncoder;
 import java.sql.Connection;
@@ -152,4 +152,81 @@ public class BoardDAO {
 		}
 		return article;
 	}
+
+	public void updateArticle(ArticleVO article) {
+		int articleNO = article.getArticleNO();
+		String title = article.getTitle();
+		String content = article.getContent();
+		String imageFileName = article.getImageFileName();
+		try {
+			conn = dataFactory.getConnection();
+			String query = "update t_board  set title=?,content=?";
+			if (imageFileName != null && imageFileName.length() != 0) {
+				query += ",imageFileName=?"; // 수정된 이미지만 있을 때만 이미지 파일 추가.
+			}
+			query += " where articleNO=?";
+			
+			pstmt = conn.prepareStatement(query);
+			pstmt.setString(1, title);
+			pstmt.setString(2, content);
+			if (imageFileName != null && imageFileName.length() != 0) {
+				pstmt.setString(3, imageFileName);
+				pstmt.setInt(4, articleNO);
+			}else {
+				pstmt.setInt(3, articleNO);
+			}
+			pstmt.executeUpdate();
+			pstmt.close();
+			conn.close();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+	}
+	
+	public List<Integer> selectRemovedArticles(int  articleNO) {
+		List<Integer> articleNOList = new ArrayList<Integer>();
+		try {
+			conn = dataFactory.getConnection();
+			String query = "SELECT articleNO FROM  t_board  ";
+			query += " START WITH articleNO = ?";
+			query += " CONNECT BY PRIOR  articleNO = parentNO";
+			System.out.println(query);
+			pstmt = conn.prepareStatement(query);
+			pstmt.setInt(1, articleNO);
+			ResultSet rs = pstmt.executeQuery();
+			while (rs.next()) {
+				articleNO = rs.getInt("articleNO");
+				articleNOList.add(articleNO);
+			}
+			pstmt.close();
+			conn.close();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return articleNOList;
+	}
+
+
+	
+	public void deleteArticle(int  articleNO) {
+		try {
+			conn = dataFactory.getConnection();
+			String query = "DELETE FROM t_board ";
+			query += " WHERE articleNO in (";
+			query += "  SELECT articleNO FROM  t_board ";
+			query += " START WITH articleNO = ?";
+			query += " CONNECT BY PRIOR  articleNO = parentNO )";
+			System.out.println(query);
+			pstmt = conn.prepareStatement(query);
+			pstmt.setInt(1, articleNO);
+			pstmt.executeUpdate();
+			pstmt.close();
+			conn.close();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	
 }

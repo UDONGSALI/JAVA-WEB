@@ -1,4 +1,4 @@
-package sec03.brd04;
+package sec03.brd07;
 
 
 import java.util.List;
@@ -23,6 +23,19 @@ public class BoardService {
 		article = boardDAO.selectArticle(articleNO);
 		return article;
 	}
+	public void modArticle(ArticleVO article) {
+		boardDAO.updateArticle(article);
+	}
+	public List removeArticle(int articleNO) {
+		List<Integer> articleNOList = boardDAO.selectRemovedArticles(articleNO);
+		boardDAO.deleteArticle(articleNO);
+		return articleNOList;
+	}
+	public int addReply(ArticleVO article) {
+		return boardDAO.insertNewArticle(article);
+	}
+
+	
 
 }
 

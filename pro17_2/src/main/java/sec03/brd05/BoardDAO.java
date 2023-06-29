@@ -1,4 +1,4 @@
-package sec03.brd04;
+package sec03.brd05;
 
 import java.net.URLEncoder;
 import java.sql.Connection;
@@ -151,5 +151,36 @@ public class BoardDAO {
 			e.printStackTrace();
 		}
 		return article;
+	}
+
+	public void updateArticle(ArticleVO article) {
+		int articleNO = article.getArticleNO();
+		String title = article.getTitle();
+		String content = article.getContent();
+		String imageFileName = article.getImageFileName();
+		try {
+			conn = dataFactory.getConnection();
+			String query = "update t_board  set title=?,content=?";
+			if (imageFileName != null && imageFileName.length() != 0) {
+				query += ",imageFileName=?"; // 수정된 이미지만 있을 때만 이미지 파일 추가.
+			}
+			query += " where articleNO=?";
+			
+			pstmt = conn.prepareStatement(query);
+			pstmt.setString(1, title);
+			pstmt.setString(2, content);
+			if (imageFileName != null && imageFileName.length() != 0) {
+				pstmt.setString(3, imageFileName);
+				pstmt.setInt(4, articleNO);
+			}else {
+				pstmt.setInt(3, articleNO);
+			}
+			pstmt.executeUpdate();
+			pstmt.close();
+			conn.close();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
 	}
 }
