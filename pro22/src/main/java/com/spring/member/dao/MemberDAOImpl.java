@@ -21,11 +21,11 @@ public class MemberDAOImpl implements MemberDAO {
 	}
 
 	@Override
-	public List selectAllMembers() throws DataAccessException {
+	public List<?> selectAllMembers() throws DataAccessException {
 		String query = "select id,pwd,name,email,joinDate" + " from t_member " + " order by joinDate desc";
-		List membersList = new ArrayList();
+		List<?> membersList = new ArrayList<Object>();
 
-		membersList = this.jdbcTemplate.query(query, new RowMapper() {
+		membersList = this.jdbcTemplate.query(query, new RowMapper<Object>() {
 			public Object mapRow(ResultSet rs, int rowNum) throws SQLException {
 				MemberVO memberVO = new MemberVO();
 				memberVO.setId(rs.getString("id"));
