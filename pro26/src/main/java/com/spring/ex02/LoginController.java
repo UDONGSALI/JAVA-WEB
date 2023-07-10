@@ -47,6 +47,7 @@ public class LoginController {
       mav.addObject("info", info);
       mav.setViewName("result");
       return mav;
+      //확인
    }
 
    @RequestMapping(value="/login4.do" ,method= {RequestMethod.GET, RequestMethod.POST})
