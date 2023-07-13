@@ -8,22 +8,22 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd 	http://www.springframework.org/schema/beans    http://www.springframework.org/schema/beans/spring-beans.xsd
 http://www.springframework.org/schema/context  http://www.springframework.org/schema/context/spring-context.xsd">
 
-<!-- DispatcherServlet Context: defines this servlet's request-processing infrastructure -->
-<!-- Enables the Spring MVC @Controller programming model -->
+<!-- 이게 왜인지는 몰라도 매핑을 다 해준다고 함 -->
 <annotation-driven />
 
-<!-- Handles HTTP GET requests for /resources/** by efficiently serving 
-		up static resources in the ${webappRoot}/resources directory -->
+<!-- 인터셉터 : 얘가 아래처럼 * 을 사용하여 모든 맵핑을 흡수하여 전처리 하고 보내 줌  -->
+<mvc:interceptors>
+    	<mvc:interceptor>
+    	<!-- 받을 맵핑 -->
+	      <mvc:mapping path="/*/*.do"/>
+	      <!-- 보내는 맵핑 -->
+	   <beans:bean class="com.myspring.pro27.member.interceptor.ViewNameInterceptor"  />
+	</mvc:interceptor>
+</mvc:interceptors>
+
 <resources mapping="/resources/**" location="/resources/" />
 
-<!-- Resolves views selected for rendering by @Controllers to .jsp resources in the /WEB-INF/views directory -->
-
-<!-- 	
-<beans:bean class="org.springframework.web.servlet.view.InternalResourceViewResolver"> 
-	<beans:property name="prefix" value="/WEB-INF/views/" /> 
-	<beans:property name="suffix" value=".jsp" /> 
-</beans:bean> 
- -->
+<!-- 스프링의 TilesConfigurer 클래스를 이용해 TilesConfigurer빈을 생성 -->
 <beans:bean id="tilesConfigurer" class="org.springframework.web.servlet.view.tiles2.TilesConfigurer">
 	<beans:property name="definitions">
 		<beans:list>
@@ -34,11 +34,12 @@ http://www.springframework.org/schema/context  http://www.springframework.org/sc
 		          value="org.springframework.web.servlet.view.tiles2.SpringBeanPreparerFactory" />
 </beans:bean>
 
+
 <beans:bean id="viewResolver"
 		class="org.springframework.web.servlet.view.UrlBasedViewResolver">
 	<beans:property name="viewClass" value="org.springframework.web.servlet.view.tiles2.TilesView" />
 </beans:bean>
 
+<!-- 대충 보낼곳을 정한 듯? -->
  <context:component-scan base-package="com.myspring.pro27" />
- 
 </beans:beans>
