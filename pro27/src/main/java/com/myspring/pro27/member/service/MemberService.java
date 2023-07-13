@@ -17,5 +17,7 @@ public interface MemberService {
 	int updateMember(MemberVO memberVO) throws DataAccessException;
 
 	MemberVO selectMemberById(String id);
+	
+	MemberVO login(MemberVO memberVO) throws Exception;
 
 }

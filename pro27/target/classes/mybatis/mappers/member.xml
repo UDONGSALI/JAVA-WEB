@@ -46,6 +46,13 @@
         pwd = #{pwd}			
      ]]>
 </select>
+	
+<select id="loginById" resultType="memberVO"  parameterType="memberVO" >
+     <![CDATA[
+        select * from t_member
+        where id = #{id} and pwd = #{pwd}
+        ]]>
+</select>
     
 <insert id="insertMember"  parameterType="memberVO">
     <![CDATA[

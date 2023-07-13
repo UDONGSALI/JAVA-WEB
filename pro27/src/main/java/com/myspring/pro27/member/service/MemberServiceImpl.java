@@ -33,12 +33,19 @@ public class MemberServiceImpl implements MemberService {
 	public int removeMember(String id) throws DataAccessException {
 		return memberDAO.deleteMember(id);
 	}
-	
-	 public int updateMember(MemberVO memberVO) throws DataAccessException {
-        return memberDAO.updateMember(memberVO);
-     }
-     public MemberVO selectMemberById(String id) throws DataAccessException {
-          return memberDAO.selectMemberById(id);
-     }
+
+	public int updateMember(MemberVO memberVO) throws DataAccessException {
+		return memberDAO.updateMember(memberVO);
+	}
+
+	public MemberVO selectMemberById(String id) throws DataAccessException {
+		return memberDAO.selectMemberById(id);
+	}
+
+	@Override
+	public MemberVO login(MemberVO memberVO) throws Exception{
+		return memberDAO.loginById(memberVO);
+		
+	}
 
 }
