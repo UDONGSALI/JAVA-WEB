@@ -32,7 +32,7 @@
 </head>
 <body>
 <h1 style="text-align:center">새글 쓰기</h1>
-  <form name="articleForm" method="post"   action="${contextPath}/board/addArticle.do"   enctype="multipart/form-data">
+  <form name="articleForm" method="post"   action="${contextPath}/board/addNewArticle.do"   enctype="multipart/form-data">
     <table border=0 align="center">
     <tr>
 	   <td align="right">작성자: </td>

@@ -7,8 +7,13 @@ import com.myspring.pro30.board.vo.ArticleVO;
 
 public interface BoardService {
 
-	List<ArticleVO> listArticles() throws Exception;
+	public List<ArticleVO> listArticles() throws Exception;
 
-	int addNewArticle(Map articleMap) throws Exception;
+	public int addNewArticle(Map articleMap) throws Exception;
 
+	public ArticleVO viewArticle(int articleNO) throws Exception;
+
+	void modArticle(Map articleMap) throws Exception;
+
+	void removeArticle(int articleNO) throws Exception;
 }
