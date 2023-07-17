@@ -1,0 +1,23 @@
+package com.myspring.pro30.member.dao;
+
+import java.util.List;
+
+import org.springframework.dao.DataAccessException;
+
+import com.myspring.pro30.member.vo.MemberVO;
+
+public interface MemberDAO {
+
+	List selectAllMemberList() throws DataAccessException;
+
+	int insertMember(MemberVO memberVO) throws DataAccessException;
+
+	int deleteMember(String id) throws DataAccessException;
+
+	int updateMember(MemberVO memberVO);
+
+	MemberVO selectMemberById(String id);
+	
+	MemberVO loginById(MemberVO memberVO);
+
+}
