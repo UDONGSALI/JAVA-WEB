@@ -17,20 +17,38 @@
 	<!-- 모든 글 불러오기 -->
 	<select id="selectAllArticlesList" resultMap="articlesResult">
     <![CDATA[
-      SELECT level, articleNO, parentNO, title, content, writeDate, imageFileName, id
+     SELECT *
+	from(
+    SELECT ROWNUM as ro ,level, articleNO, parentNO, title, id, content, writeDate, imageFileName
       from t_board
       START WITH  parentNO=0
       CONNECT BY PRIOR articleNO=parentNO 
-      ORDER SIBLINGS BY articleNO DESC		
+      ORDER SIBLINGS BY articleNO DESC)
+      WHERE ro between (#{section}-1)*100+(#{pageNum}-1)*10+1 and (#{section}-1)*100+(#{pageNum})*10
     ]]>
 	</select>
 
-	<!-- 단일 이미지 추가 넘버 어쩌구 추가 -->
+	<!-- <insert id="insertNewArticle" parameterType="java.util.Map"> <![CDATA[ 
+		INSERT into t_board(articleNO, title, content, imageFileName, id) VALUES(#{articleNO},#{title},#{content}, 
+		#{imageFileName}, #{id}) ]]> </insert> -->
+
+	<!-- 다중 이미지 -->
 	<insert id="insertNewArticle" parameterType="java.util.Map">
-	<![CDATA[
-		INSERT into t_board(articleNO,  title, content, imageFileName, id)
-		VALUES(#{articleNO},#{title},#{content}, #{imageFileName}, #{id})
-	]]>
+    <![CDATA[
+      insert into t_board(articleNO, id, title, content, imageFileName, parentNO)
+      values(#{articleNO}, #{id}, #{title}, #{content}, null,#{parentNO})
+    ]]>
+	</insert>
+
+	<insert id="insertNewImage" parameterType="java.util.Map">
+		<foreach item="item" collection="list" open="INSERT ALL"
+			separator=" " close="SELECT * FROM DUAL">
+			INTO t_imageFile(imageFileNO, imageFileName,
+			articleNO, regDate)
+			VALUES (#{item.imageFileNO},
+			#{item.imageFileName}, #{item.articleNO},
+			sysdate)
+		</foreach>
 	</insert>
 
 	<select id="selectNewArticleNO" resultType="int">
@@ -45,6 +63,12 @@
 		SELECT  * from t_board
 		where articleNO = #{articleNO}		
           ]]>
+	</select>
+
+	<select id="selectNewImageFileNO" resultType="int">
+	<![CDATA[
+	SELECT nvl(max(imageFileNO),0) from t_imageFile	
+	]]>
 	</select>
 
 	<update id="updateArticle" parameterType="java.util.Map">
@@ -65,5 +89,26 @@
          CONNECT BY PRIOR  articleNO = parentNO )
 		]]>
 	</delete>
+
+	<resultMap type="imageVO" id="imgResult">
+		<result property="imageFileNO" column="imageFileNO" />
+		<result property="articleNO" column="articleNO" />
+		<result property="imageFileName" column="imageFileName" />
+	</resultMap>
+
+	<select id="selectImageFileList" resultMap="imgResult"
+		parameterType="int">
+	<![CDATA[
+      SELECT * from t_imageFile
+      where articleNO=#{articleNO}	
+   	 ]]>
+	</select>
+
+	<select id="selectTotArticles"  resultType="int">
+		<![CDATA[
+		select count(articleNO)
+		from t_board
+		 ]]>
+	</select>
 
 </mapper>

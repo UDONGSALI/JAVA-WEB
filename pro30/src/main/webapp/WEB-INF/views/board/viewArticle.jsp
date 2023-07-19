@@ -6,6 +6,9 @@
 request.setCharacterEncoding("UTF-8");
 %>
 <c:set var="contextPath" value="${pageContext.request.contextPath}" />
+<c:set var="article" value="${articleMap.article}" />
+<c:set var="imageFileList" value="${articleMap.imageFileList}" />
+
 <head>
 <meta charset="UTF-8">
 <title>글보기</title>
@@ -30,12 +33,13 @@ request.setCharacterEncoding("UTF-8");
 		 document.getElementById("tr_btn_modify").style.display="block";
 		 document.getElementById("tr_btn").style.display="none";
 	 }
+     
      function fn_enable2(obj){
-         document.getElementById("i_title").disabled=false;
-document.getElementById("i_content").disabled=false;
-document.getElementById("tr_btn_modify").style.display="block";
-document.getElementById("tr_btn").style.display="none";
- }
+        document.getElementById("i_title").disabled=false;
+		document.getElementById("i_content").disabled=false;
+		document.getElementById("tr_btn_modify").style.display="block";
+		document.getElementById("tr_btn").style.display="none";
+ 	}
 
 	 
 	 function fn_modify_article(obj){
@@ -65,18 +69,23 @@ document.getElementById("tr_btn").style.display="none";
 	         reader.readAsDataURL(input.files[0]);
 	     }
 	 }
-	 function fn_reply_form(url, parentNO){
-	     var form = document.createElement("form");
-	     form.setAttribute("method", "post");
-	     form.setAttribute("action", url);
-	     var parentNOInput = document.createElement("input");
-	     parentNOInput.setAttribute("type","hidden");
-	     parentNOInput.setAttribute("name","parentNO");
-	     parentNOInput.setAttribute("value", parentNO);
-		 
-	     form.appendChild(parentNOInput);
-	     document.body.appendChild(form);
-		 form.submit();
+	 function fn_reply_form(url, parentNO,isLogOn){
+		if (isLogOn == true) {
+			 var form = document.createElement("form");
+		     form.setAttribute("method", "get");
+		     form.setAttribute("action", url);
+		     var parentNOInput = document.createElement("input");
+		     parentNOInput.setAttribute("type","hidden");
+		     parentNOInput.setAttribute("name","parentNO");
+		     parentNOInput.setAttribute("value", parentNO);
+		     form.appendChild(parentNOInput);
+		     document.body.appendChild(form);
+			 form.submit();
+		}else{
+			alert("로그인 후 글쓰기가 가능합니다.");
+		    location.href="${contextPath}/member/loginForm.do?action=http://localhost:8060/pro30/board/replyForm.do?parentNO="+parentNO;
+		}
+
 	 }
 
 
@@ -108,43 +117,24 @@ document.getElementById("tr_btn").style.display="none";
 				<td><textarea rows="20" cols="60" name="content" id="i_content"
 						disabled />${article.content }</textarea></td>
 			</tr>
-			
-			
-			
-		<c:choose>
-			<c:when
-				test="${not empty article.imageFileName && article.imageFileName!='null' }">
-				<tr>
-					<td width="20%" align="center" bgcolor="#FF9933" rowspan="2">
-						이미지</td>
-					<td><input type="hidden" name="originalFileName"
-						id="originalFileName" value="${article.imageFileName }" /> <img
-						src="${contextPath}/download.do?articleNO=${article.articleNO}&imageFileName=${article.imageFileName}"
-						id="preview" /><br></td>
-				</tr>
-				<tr>
-					<td><input type="file" name="imageFileName "
-						id="i_imageFileName" disabled onchange="readURL(this);" /></td>
-				</tr>
-			</c:when>
-			<c:otherwise>
-		    <tr  id="tr_file_upload" >
-				    <td width="150" align="center" bgcolor="#FF9933"  rowspan="2">
-				      이미지
-				    </td>
-				    <td>
-				      <input  type= "hidden"   name="originalFileName" value="${article.imageFileName }" />
-				    </td>
-			    </tr>
-			    <tr>
-				    <td ></td>
-				    <td>
-				       <img id="preview"  /><br>
-				       <input  type="file"  name="imageFileName " id="i_imageFileName"   disabled   onchange="readURL(this);"   />
-				    </td>
-			  </tr>
-		 </c:otherwise>		
-		</c:choose>
+
+			<c:if test="${not empty imageFileList && imageFileList!='null' }">
+				<c:forEach var="item" items="${imageFileList}" varStatus="status">
+					<tr>
+						<td width="150" align="center" bgcolor="#FF9933" rowspan="2">
+							이미지${status.count }</td>
+						<td><input type="hidden" name="originalFileName"
+							value="${item.imageFileName }" /> <img
+							src="${contextPath}/download.do?articleNO=${article.articleNO}&imageFileName=${item.imageFileName}"
+							id="preview" /><br></td>
+					</tr>
+					<tr>
+						<td><input type="file" name="imageFileName "
+							id="i_imageFileName" disabled onchange="readURL(this);" /></td>
+					</tr>
+				</c:forEach>
+			</c:if>
+
 			<tr>
 				<td width="20%" align="center" bgcolor="#FF9933">등록일자</td>
 				<td><input type=text
@@ -158,18 +148,17 @@ document.getElementById("tr_btn").style.display="none";
 			</tr>
 
 			<tr id="tr_btn">
-				<td colspan="2" align="center">
-					<c:if test="${member.id == article.id}">
-					<input type=button value="수정하기" onClick="fn_enable(this.form)">
-					<input type=button value="삭제하기" onClick="fn_remove_article('${contextPath}/board/removeArticle.do', ${article.articleNO})">
-					</c:if>
-					<input type=button value="리스트로 돌아가기"
+				<td colspan="2" align="center"><c:if
+						test="${member.id == article.id}">
+						<input type=button value="수정하기" , onClick="fn_enable(this.form)">
+						<input type=button value="삭제하기"
+							onClick="fn_remove_article('${contextPath}/board/removeArticle.do', ${article.articleNO})">
+					</c:if> <input type=button value="리스트로 돌아가기"
 					onClick="backToList(this.form)"> <input type=button
 					value="답글쓰기"
-					onClick="fn_reply_form('${contextPath}/board/replyForm.do', ${article.articleNO})">
+					onClick="fn_reply_form('${contextPath}/board/replyForm.do', ${article.articleNO},${isLogOn})">
 				</td>
 			</tr>
-
 		</table>
 	</form>
 </body>

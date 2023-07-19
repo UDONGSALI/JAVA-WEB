@@ -14,4 +14,7 @@ public interface BoardController {
 	public ResponseEntity addNewArticle(MultipartHttpServletRequest multipartRequest, HttpServletResponse response) throws Exception ;
 
 	ResponseEntity removeArticle(int articleNO, HttpServletRequest request, HttpServletResponse response) throws Exception;
+
+	ResponseEntity replyForm(MultipartHttpServletRequest multipartRequest, HttpServletResponse response)
+			throws Exception;
 }
