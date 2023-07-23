@@ -85,13 +85,8 @@ request.setCharacterEncoding("UTF-8");
 			alert("로그인 후 글쓰기가 가능합니다.");
 		    location.href="${contextPath}/member/loginForm.do?action=http://localhost:8060/pro30/board/replyForm.do?parentNO="+parentNO;
 		}
-
 	 }
-
-
  </script>
-
-
 </head>
 <body>
 	<form name="frmArticle" method="post" enctype="multipart/form-data">
