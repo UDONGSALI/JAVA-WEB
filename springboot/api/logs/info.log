@@ -1,0 +1,125 @@
+[2023-07-26 10:18:22.154] [INFO ] [main] com.springboot.api.ApiApplication Starting ApiApplication using Java 17.0.7 on BIG601-04 with PID 972 (C:\DEV\intellij_workspace\api\target\classes started by BIG601-02 in C:\DEV\intellij_workspace\api)
+[2023-07-26 10:18:22.165] [INFO ] [main] com.springboot.api.ApiApplication No active profile set, falling back to 1 default profile: "default"
+[2023-07-26 10:18:23.465] [INFO ] [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 8090 (http)
+[2023-07-26 10:18:23.476] [INFO ] [main] org.apache.coyote.http11.Http11NioProtocol Initializing ProtocolHandler ["http-nio-8090"]
+[2023-07-26 10:18:23.479] [INFO ] [main] org.apache.catalina.core.StandardService Starting service [Tomcat]
+[2023-07-26 10:18:23.480] [INFO ] [main] org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.78]
+[2023-07-26 10:18:23.615] [INFO ] [main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext
+[2023-07-26 10:18:23.615] [INFO ] [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 1388 ms
+[2023-07-26 10:18:24.081] [INFO ] [main] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+[2023-07-26 10:18:24.306] [INFO ] [main] org.apache.coyote.http11.Http11NioProtocol Starting ProtocolHandler ["http-nio-8090"]
+[2023-07-26 10:18:24.329] [INFO ] [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port(s): 8090 (http) with context path ''
+[2023-07-26 10:18:24.330] [INFO ] [main] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Context refreshed
+[2023-07-26 10:18:24.356] [INFO ] [main] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Found 1 custom documentation plugin(s)
+[2023-07-26 10:18:24.392] [INFO ] [main] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Scanning for api listing references
+[2023-07-26 10:18:24.677] [INFO ] [main] com.springboot.api.ApiApplication Started ApiApplication in 3.049 seconds (JVM running for 3.481)
+[2023-07-26 10:18:26.781] [INFO ] [http-nio-8090-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2023-07-26 10:18:26.782] [INFO ] [http-nio-8090-exec-1] org.springframework.web.servlet.DispatcherServlet Initializing Servlet 'dispatcherServlet'
+[2023-07-26 10:18:26.783] [INFO ] [http-nio-8090-exec-1] org.springframework.web.servlet.DispatcherServlet Completed initialization in 1 ms
+[2023-07-26 10:25:58.664] [INFO ] [main] com.springboot.api.ApiApplication Starting ApiApplication using Java 17.0.7 on BIG601-04 with PID 5860 (C:\DEV\intellij_workspace\api\target\classes started by BIG601-02 in C:\DEV\intellij_workspace\api)
+[2023-07-26 10:25:58.668] [INFO ] [main] com.springboot.api.ApiApplication No active profile set, falling back to 1 default profile: "default"
+[2023-07-26 10:26:00.314] [INFO ] [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 8090 (http)
+[2023-07-26 10:26:00.324] [INFO ] [main] org.apache.coyote.http11.Http11NioProtocol Initializing ProtocolHandler ["http-nio-8090"]
+[2023-07-26 10:26:00.327] [INFO ] [main] org.apache.catalina.core.StandardService Starting service [Tomcat]
+[2023-07-26 10:26:00.327] [INFO ] [main] org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.78]
+[2023-07-26 10:26:00.446] [INFO ] [main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext
+[2023-07-26 10:26:00.446] [INFO ] [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 1717 ms
+[2023-07-26 10:26:00.521] [WARN ] [main] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'getController' defined in file [C:\DEV\intellij_workspace\api\target\classes\com\springboot\api\controller\GetController.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.springboot.api.controller.GetController]: Constructor threw exception; nested exception is java.lang.ClassCastException: class ch.qos.logback.classic.Logger cannot be cast to class java.util.logging.Logger (ch.qos.logback.classic.Logger is in unnamed module of loader 'app'; java.util.logging.Logger is in module java.logging of loader 'bootstrap')
+[2023-07-26 10:26:00.532] [INFO ] [main] org.apache.catalina.core.StandardService Stopping service [Tomcat]
+[2023-07-26 10:26:00.553] [INFO ] [main] org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[2023-07-26 10:26:00.580] [ERROR] [main] org.springframework.boot.SpringApplication Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'getController' defined in file [C:\DEV\intellij_workspace\api\target\classes\com\springboot\api\controller\GetController.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.springboot.api.controller.GetController]: Constructor threw exception; nested exception is java.lang.ClassCastException: class ch.qos.logback.classic.Logger cannot be cast to class java.util.logging.Logger (ch.qos.logback.classic.Logger is in unnamed module of loader 'app'; java.util.logging.Logger is in module java.logging of loader 'bootstrap')
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1334)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1232)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:921)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at com.springboot.api.ApiApplication.main(ApiApplication.java:10)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.springboot.api.controller.GetController]: Constructor threw exception; nested exception is java.lang.ClassCastException: class ch.qos.logback.classic.Logger cannot be cast to class java.util.logging.Logger (ch.qos.logback.classic.Logger is in unnamed module of loader 'app'; java.util.logging.Logger is in module java.logging of loader 'bootstrap')
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:224)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1326)
+	... 17 common frames omitted
+Caused by: java.lang.ClassCastException: class ch.qos.logback.classic.Logger cannot be cast to class java.util.logging.Logger (ch.qos.logback.classic.Logger is in unnamed module of loader 'app'; java.util.logging.Logger is in module java.logging of loader 'bootstrap')
+	at com.springboot.api.controller.GetController.<init>(GetController.java:15)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:211)
+	... 19 common frames omitted
+[2023-07-26 10:28:30.901] [INFO ] [main] com.springboot.api.ApiApplication Starting ApiApplication using Java 17.0.7 on BIG601-04 with PID 5668 (C:\DEV\intellij_workspace\api\target\classes started by BIG601-02 in C:\DEV\intellij_workspace\api)
+[2023-07-26 10:28:30.904] [INFO ] [main] com.springboot.api.ApiApplication No active profile set, falling back to 1 default profile: "default"
+[2023-07-26 10:28:32.134] [INFO ] [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 8090 (http)
+[2023-07-26 10:28:32.143] [INFO ] [main] org.apache.coyote.http11.Http11NioProtocol Initializing ProtocolHandler ["http-nio-8090"]
+[2023-07-26 10:28:32.145] [INFO ] [main] org.apache.catalina.core.StandardService Starting service [Tomcat]
+[2023-07-26 10:28:32.146] [INFO ] [main] org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.78]
+[2023-07-26 10:28:32.256] [INFO ] [main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext
+[2023-07-26 10:28:32.257] [INFO ] [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 1305 ms
+[2023-07-26 10:28:32.706] [INFO ] [main] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+[2023-07-26 10:28:32.896] [INFO ] [main] org.apache.coyote.http11.Http11NioProtocol Starting ProtocolHandler ["http-nio-8090"]
+[2023-07-26 10:28:32.927] [INFO ] [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port(s): 8090 (http) with context path ''
+[2023-07-26 10:28:32.928] [INFO ] [main] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Context refreshed
+[2023-07-26 10:28:32.950] [INFO ] [main] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Found 1 custom documentation plugin(s)
+[2023-07-26 10:28:32.976] [INFO ] [main] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Scanning for api listing references
+[2023-07-26 10:28:33.186] [INFO ] [main] com.springboot.api.ApiApplication Started ApiApplication in 2.734 seconds (JVM running for 3.123)
+[2023-07-26 10:28:38.034] [INFO ] [http-nio-8090-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2023-07-26 10:28:38.035] [INFO ] [http-nio-8090-exec-1] org.springframework.web.servlet.DispatcherServlet Initializing Servlet 'dispatcherServlet'
+[2023-07-26 10:28:38.036] [INFO ] [http-nio-8090-exec-1] org.springframework.web.servlet.DispatcherServlet Completed initialization in 1 ms
+[2023-07-26 10:29:38.393] [INFO ] [main] com.springboot.api.ApiApplication Starting ApiApplication using Java 17.0.7 on BIG601-04 with PID 3304 (C:\DEV\intellij_workspace\api\target\classes started by BIG601-02 in C:\DEV\intellij_workspace\api)
+[2023-07-26 10:29:38.397] [INFO ] [main] com.springboot.api.ApiApplication No active profile set, falling back to 1 default profile: "default"
+[2023-07-26 10:29:39.769] [INFO ] [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 8090 (http)
+[2023-07-26 10:29:39.778] [INFO ] [main] org.apache.coyote.http11.Http11NioProtocol Initializing ProtocolHandler ["http-nio-8090"]
+[2023-07-26 10:29:39.781] [INFO ] [main] org.apache.catalina.core.StandardService Starting service [Tomcat]
+[2023-07-26 10:29:39.781] [INFO ] [main] org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.78]
+[2023-07-26 10:29:39.908] [INFO ] [main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext
+[2023-07-26 10:29:39.908] [INFO ] [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 1461 ms
+[2023-07-26 10:29:40.424] [INFO ] [main] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+[2023-07-26 10:29:40.648] [INFO ] [main] org.apache.coyote.http11.Http11NioProtocol Starting ProtocolHandler ["http-nio-8090"]
+[2023-07-26 10:29:40.673] [INFO ] [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port(s): 8090 (http) with context path ''
+[2023-07-26 10:29:40.675] [INFO ] [main] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Context refreshed
+[2023-07-26 10:29:40.699] [INFO ] [main] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Found 1 custom documentation plugin(s)
+[2023-07-26 10:29:40.731] [INFO ] [main] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Scanning for api listing references
+[2023-07-26 10:29:40.961] [INFO ] [main] com.springboot.api.ApiApplication Started ApiApplication in 3.079 seconds (JVM running for 3.441)
+[2023-07-26 10:29:43.122] [INFO ] [http-nio-8090-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2023-07-26 10:29:43.122] [INFO ] [http-nio-8090-exec-1] org.springframework.web.servlet.DispatcherServlet Initializing Servlet 'dispatcherServlet'
+[2023-07-26 10:29:43.123] [INFO ] [http-nio-8090-exec-1] org.springframework.web.servlet.DispatcherServlet Completed initialization in 1 ms
+[2023-07-26 10:29:48.845] [INFO ] [http-nio-8090-exec-6] com.springboot.api.controller.GetController getname 호출
+[2023-07-26 10:29:49.460] [INFO ] [http-nio-8090-exec-7] com.springboot.api.controller.GetController getname 호출
+[2023-07-26 10:30:33.675] [INFO ] [main] com.springboot.api.ApiApplication Starting ApiApplication using Java 17.0.7 on BIG601-04 with PID 8204 (C:\DEV\intellij_workspace\api\target\classes started by BIG601-02 in C:\DEV\intellij_workspace\api)
+[2023-07-26 10:30:33.680] [INFO ] [main] com.springboot.api.ApiApplication No active profile set, falling back to 1 default profile: "default"
+[2023-07-26 10:30:35.039] [INFO ] [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 8090 (http)
+[2023-07-26 10:30:35.049] [INFO ] [main] org.apache.coyote.http11.Http11NioProtocol Initializing ProtocolHandler ["http-nio-8090"]
+[2023-07-26 10:30:35.053] [INFO ] [main] org.apache.catalina.core.StandardService Starting service [Tomcat]
+[2023-07-26 10:30:35.053] [INFO ] [main] org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.78]
+[2023-07-26 10:30:35.189] [INFO ] [main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext
+[2023-07-26 10:30:35.189] [INFO ] [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 1458 ms
+[2023-07-26 10:30:35.799] [INFO ] [main] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+[2023-07-26 10:30:36.005] [INFO ] [main] org.apache.coyote.http11.Http11NioProtocol Starting ProtocolHandler ["http-nio-8090"]
+[2023-07-26 10:30:36.028] [INFO ] [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port(s): 8090 (http) with context path ''
+[2023-07-26 10:30:36.029] [INFO ] [main] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Context refreshed
+[2023-07-26 10:30:36.054] [INFO ] [main] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Found 1 custom documentation plugin(s)
+[2023-07-26 10:30:36.091] [INFO ] [main] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Scanning for api listing references
+[2023-07-26 10:30:36.140] [INFO ] [http-nio-8090-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2023-07-26 10:30:36.141] [INFO ] [http-nio-8090-exec-1] org.springframework.web.servlet.DispatcherServlet Initializing Servlet 'dispatcherServlet'
+[2023-07-26 10:30:36.142] [INFO ] [http-nio-8090-exec-1] org.springframework.web.servlet.DispatcherServlet Completed initialization in 1 ms
+[2023-07-26 10:30:36.491] [INFO ] [main] com.springboot.api.ApiApplication Started ApiApplication in 3.273 seconds (JVM running for 3.612)
+[2023-07-26 10:30:41.581] [INFO ] [http-nio-8090-exec-8] com.springboot.api.controller.GetController gethello 호출
+[2023-07-26 10:30:43.677] [INFO ] [http-nio-8090-exec-9] com.springboot.api.controller.GetController gethello 호출
+[2023-07-26 10:30:59.564] [INFO ] [http-nio-8090-exec-10] com.springboot.api.controller.GetController gethello 호출
+[2023-07-26 10:31:01.436] [INFO ] [http-nio-8090-exec-1] com.springboot.api.controller.GetController gethello 호출
