@@ -1,4 +1,4 @@
-package com.springboot.api.config;
+package com.springboot.jpa.config;
 
 import org.springframework.context.annotation.Configuration;
 import springfox.documentation.builders.ApiInfoBuilder;
