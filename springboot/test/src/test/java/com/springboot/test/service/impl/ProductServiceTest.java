@@ -16,6 +16,7 @@ import java.util.Optional;
 import static org.mockito.AdditionalAnswers.returnsFirstArg;
 import static org.mockito.ArgumentMatchers.any;
 import com.springboot.test.data.dto.ProductDto;
+import org.springframework.test.annotation.Rollback;
 
 
 public class ProductServiceTest {
@@ -47,6 +48,8 @@ public class ProductServiceTest {
 //        verify(productRepository).findById(123L);
 //    }
     @Test
+    @Rollback(false)
+
     void saveProductTest(){
         Mockito.when(productRepository.save(any(Product.class)))
                 .then(returnsFirstArg());

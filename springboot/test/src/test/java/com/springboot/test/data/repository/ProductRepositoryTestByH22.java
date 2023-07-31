@@ -36,6 +36,8 @@ public class ProductRepositoryTestByH22 {
 //        assertEquals(product.getStock(), savedProduct.getStock());
 //    }
     @Test
+    @Rollback(false)
+
     void selectTest() {
         // given
         Product product = new Product();

@@ -10,7 +10,7 @@ import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 import org.springframework.test.annotation.Rollback;
 import org.springframework.test.context.TestPropertySource;
 
-@TestPropertySource("classpath:application-test.properties")
+//@TestPropertySource("classpath:application-test.properties")
 @DataJpaTest
 public class ProductRepositoryTestByH2 {
 
