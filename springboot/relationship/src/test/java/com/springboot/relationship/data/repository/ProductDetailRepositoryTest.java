@@ -3,6 +3,7 @@ package com.springboot.relationship.data.repository;
 
 import com.springboot.relationship.data.entity.Product;
 import com.springboot.relationship.data.entity.ProductDetail;
+import com.springboot.relationship.data.entity.Provider;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -34,4 +35,6 @@ public class ProductDetailRepositoryTest {
         System.out.println("savedProductDetail : " + productDetailRepository.findById(
                 productDetail.getId()).get());
     }
+
+
 }
