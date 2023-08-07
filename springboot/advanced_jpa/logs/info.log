@@ -1,0 +1,119 @@
+[2023-07-31 09:51:48.949] [INFO ] [main] com.springboot.advanced_jpa.data.repository.ProductRepositoryTest Starting ProductRepositoryTest using Java 17.0.7 on BIG601-04 with PID 4828 (started by BIG601-02 in C:\Users\BIG601-02\git\JAVA-WEB\springboot\advanced_jpa)
+[2023-07-31 09:51:48.957] [INFO ] [main] com.springboot.advanced_jpa.data.repository.ProductRepositoryTest No active profile set, falling back to 1 default profile: "default"
+[2023-07-31 09:51:49.745] [INFO ] [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2023-07-31 09:51:49.829] [INFO ] [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 73 ms. Found 1 JPA repository interfaces.
+[2023-07-31 09:51:50.468] [INFO ] [main] org.hibernate.jpa.internal.util.LogHelper HHH000204: Processing PersistenceUnitInfo [name: default]
+[2023-07-31 09:51:50.539] [INFO ] [main] org.hibernate.Version HHH000412: Hibernate ORM core version 5.6.15.Final
+[2023-07-31 09:51:50.763] [INFO ] [main] org.hibernate.annotations.common.Version HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2023-07-31 09:51:50.954] [INFO ] [main] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Starting...
+[2023-07-31 09:51:51.030] [INFO ] [main] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Start completed.
+[2023-07-31 09:51:51.064] [INFO ] [main] org.hibernate.dialect.Dialect HHH000400: Using dialect: org.hibernate.dialect.MariaDB53Dialect
+[2023-07-31 09:51:51.836] [INFO ] [main] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2023-07-31 09:51:51.846] [INFO ] [main] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2023-07-31 09:51:52.602] [WARN ] [main] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2023-07-31 09:51:53.224] [INFO ] [main] com.springboot.advanced_jpa.data.repository.ProductRepositoryTest Started ProductRepositoryTest in 4.735 seconds (JVM running for 5.81)
+[2023-07-31 09:51:53.867] [INFO ] [SpringApplicationShutdownHook] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Closing JPA EntityManagerFactory for persistence unit 'default'
+[2023-07-31 09:51:53.871] [INFO ] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown initiated...
+[2023-07-31 09:51:53.906] [INFO ] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown completed.
+[2023-07-31 09:52:42.237] [INFO ] [main] com.springboot.advanced_jpa.data.repository.ProductRepositoryTest Starting ProductRepositoryTest using Java 17.0.7 on BIG601-04 with PID 3248 (started by BIG601-02 in C:\Users\BIG601-02\git\JAVA-WEB\springboot\advanced_jpa)
+[2023-07-31 09:52:42.239] [INFO ] [main] com.springboot.advanced_jpa.data.repository.ProductRepositoryTest No active profile set, falling back to 1 default profile: "default"
+[2023-07-31 09:52:43.023] [INFO ] [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2023-07-31 09:52:43.089] [INFO ] [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 56 ms. Found 1 JPA repository interfaces.
+[2023-07-31 09:52:43.704] [INFO ] [main] org.hibernate.jpa.internal.util.LogHelper HHH000204: Processing PersistenceUnitInfo [name: default]
+[2023-07-31 09:52:43.757] [INFO ] [main] org.hibernate.Version HHH000412: Hibernate ORM core version 5.6.15.Final
+[2023-07-31 09:52:43.917] [INFO ] [main] org.hibernate.annotations.common.Version HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2023-07-31 09:52:44.080] [INFO ] [main] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Starting...
+[2023-07-31 09:52:44.144] [INFO ] [main] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Start completed.
+[2023-07-31 09:52:44.185] [INFO ] [main] org.hibernate.dialect.Dialect HHH000400: Using dialect: org.hibernate.dialect.MariaDB53Dialect
+[2023-07-31 09:52:44.814] [INFO ] [main] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2023-07-31 09:52:44.825] [INFO ] [main] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2023-07-31 09:52:45.551] [WARN ] [main] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2023-07-31 09:52:46.246] [INFO ] [main] com.springboot.advanced_jpa.data.repository.ProductRepositoryTest Started ProductRepositoryTest in 4.434 seconds (JVM running for 5.574)
+[2023-07-31 09:52:46.787] [INFO ] [SpringApplicationShutdownHook] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Closing JPA EntityManagerFactory for persistence unit 'default'
+[2023-07-31 09:52:46.792] [INFO ] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown initiated...
+[2023-07-31 09:52:46.821] [INFO ] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown completed.
+[2023-07-31 09:54:12.202] [INFO ] [main] com.springboot.advanced_jpa.data.repository.ProductRepositoryTest Starting ProductRepositoryTest using Java 17.0.7 on BIG601-04 with PID 13688 (started by BIG601-02 in C:\Users\BIG601-02\git\JAVA-WEB\springboot\advanced_jpa)
+[2023-07-31 09:54:12.208] [INFO ] [main] com.springboot.advanced_jpa.data.repository.ProductRepositoryTest No active profile set, falling back to 1 default profile: "default"
+[2023-07-31 09:54:12.867] [INFO ] [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2023-07-31 09:54:12.931] [INFO ] [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 56 ms. Found 1 JPA repository interfaces.
+[2023-07-31 09:54:13.503] [INFO ] [main] org.hibernate.jpa.internal.util.LogHelper HHH000204: Processing PersistenceUnitInfo [name: default]
+[2023-07-31 09:54:13.554] [INFO ] [main] org.hibernate.Version HHH000412: Hibernate ORM core version 5.6.15.Final
+[2023-07-31 09:54:13.731] [INFO ] [main] org.hibernate.annotations.common.Version HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2023-07-31 09:54:13.882] [INFO ] [main] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Starting...
+[2023-07-31 09:54:13.948] [INFO ] [main] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Start completed.
+[2023-07-31 09:54:13.980] [INFO ] [main] org.hibernate.dialect.Dialect HHH000400: Using dialect: org.hibernate.dialect.MariaDB53Dialect
+[2023-07-31 09:54:14.580] [INFO ] [main] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2023-07-31 09:54:14.591] [INFO ] [main] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2023-07-31 09:54:15.336] [WARN ] [main] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2023-07-31 09:54:15.954] [INFO ] [main] com.springboot.advanced_jpa.data.repository.ProductRepositoryTest Started ProductRepositoryTest in 4.162 seconds (JVM running for 5.226)
+[2023-07-31 09:54:16.389] [INFO ] [SpringApplicationShutdownHook] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Closing JPA EntityManagerFactory for persistence unit 'default'
+[2023-07-31 09:54:16.391] [INFO ] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown initiated...
+[2023-07-31 09:54:16.395] [INFO ] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown completed.
+[2023-07-31 10:22:38.489] [INFO ] [main] com.springboot.advanced_jpa.data.repository.QProductRepositoryTest Starting QProductRepositoryTest using Java 17.0.7 on BIG601-04 with PID 6464 (started by BIG601-02 in C:\Users\BIG601-02\git\JAVA-WEB\springboot\advanced_jpa)
+[2023-07-31 10:22:38.491] [INFO ] [main] com.springboot.advanced_jpa.data.repository.QProductRepositoryTest No active profile set, falling back to 1 default profile: "default"
+[2023-07-31 10:22:39.267] [INFO ] [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2023-07-31 10:22:39.347] [INFO ] [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 63 ms. Found 2 JPA repository interfaces.
+[2023-07-31 10:22:39.938] [INFO ] [main] org.hibernate.jpa.internal.util.LogHelper HHH000204: Processing PersistenceUnitInfo [name: default]
+[2023-07-31 10:22:39.994] [INFO ] [main] org.hibernate.Version HHH000412: Hibernate ORM core version 5.6.15.Final
+[2023-07-31 10:22:40.150] [INFO ] [main] org.hibernate.annotations.common.Version HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2023-07-31 10:22:40.315] [INFO ] [main] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Starting...
+[2023-07-31 10:22:40.384] [INFO ] [main] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Start completed.
+[2023-07-31 10:22:40.417] [INFO ] [main] org.hibernate.dialect.Dialect HHH000400: Using dialect: org.hibernate.dialect.MariaDB53Dialect
+[2023-07-31 10:22:41.001] [INFO ] [main] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2023-07-31 10:22:41.010] [INFO ] [main] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2023-07-31 10:22:41.694] [WARN ] [main] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2023-07-31 10:22:42.416] [INFO ] [main] com.springboot.advanced_jpa.data.repository.QProductRepositoryTest Started QProductRepositoryTest in 4.348 seconds (JVM running for 5.329)
+[2023-07-31 10:22:42.845] [INFO ] [SpringApplicationShutdownHook] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Closing JPA EntityManagerFactory for persistence unit 'default'
+[2023-07-31 10:22:42.847] [INFO ] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown initiated...
+[2023-07-31 10:22:42.851] [INFO ] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown completed.
+[2023-07-31 10:29:23.976] [INFO ] [main] com.springboot.advanced_jpa.data.repository.QProductRepositoryTest Starting QProductRepositoryTest using Java 11.0.19 on BIG601-04 with PID 8020 (started by BIG601-02 in C:\Users\BIG601-02\git\JAVA-WEB\springboot\advanced_jpa)
+[2023-07-31 10:29:23.977] [INFO ] [main] com.springboot.advanced_jpa.data.repository.QProductRepositoryTest No active profile set, falling back to 1 default profile: "default"
+[2023-07-31 10:29:24.708] [INFO ] [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2023-07-31 10:29:24.780] [INFO ] [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 62 ms. Found 2 JPA repository interfaces.
+[2023-07-31 10:29:25.443] [INFO ] [main] org.hibernate.jpa.internal.util.LogHelper HHH000204: Processing PersistenceUnitInfo [name: default]
+[2023-07-31 10:29:25.493] [INFO ] [main] org.hibernate.Version HHH000412: Hibernate ORM core version 5.6.15.Final
+[2023-07-31 10:29:25.653] [INFO ] [main] org.hibernate.annotations.common.Version HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2023-07-31 10:29:25.847] [INFO ] [main] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Starting...
+[2023-07-31 10:29:25.933] [INFO ] [main] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Start completed.
+[2023-07-31 10:29:25.967] [INFO ] [main] org.hibernate.dialect.Dialect HHH000400: Using dialect: org.hibernate.dialect.MariaDB53Dialect
+[2023-07-31 10:29:26.604] [INFO ] [main] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2023-07-31 10:29:26.615] [INFO ] [main] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2023-07-31 10:29:27.294] [WARN ] [main] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2023-07-31 10:29:28.055] [INFO ] [main] com.springboot.advanced_jpa.data.repository.QProductRepositoryTest Started QProductRepositoryTest in 4.596 seconds (JVM running for 5.774)
+[2023-07-31 10:29:28.405] [INFO ] [SpringApplicationShutdownHook] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Closing JPA EntityManagerFactory for persistence unit 'default'
+[2023-07-31 10:29:28.407] [INFO ] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown initiated...
+[2023-07-31 10:29:28.413] [INFO ] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown completed.
+[2023-07-31 10:32:56.678] [INFO ] [main] com.springboot.advanced_jpa.data.repository.QProductRepositoryTest Starting QProductRepositoryTest using Java 11.0.19 on BIG601-04 with PID 11168 (started by BIG601-02 in C:\Users\BIG601-02\git\JAVA-WEB\springboot\advanced_jpa)
+[2023-07-31 10:32:56.680] [INFO ] [main] com.springboot.advanced_jpa.data.repository.QProductRepositoryTest No active profile set, falling back to 1 default profile: "default"
+[2023-07-31 10:32:57.963] [INFO ] [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2023-07-31 10:32:58.050] [INFO ] [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 68 ms. Found 2 JPA repository interfaces.
+[2023-07-31 10:32:58.728] [INFO ] [main] org.hibernate.jpa.internal.util.LogHelper HHH000204: Processing PersistenceUnitInfo [name: default]
+[2023-07-31 10:32:58.803] [INFO ] [main] org.hibernate.Version HHH000412: Hibernate ORM core version 5.6.15.Final
+[2023-07-31 10:32:59.022] [INFO ] [main] org.hibernate.annotations.common.Version HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2023-07-31 10:32:59.247] [INFO ] [main] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Starting...
+[2023-07-31 10:32:59.356] [INFO ] [main] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Start completed.
+[2023-07-31 10:32:59.395] [INFO ] [main] org.hibernate.dialect.Dialect HHH000400: Using dialect: org.hibernate.dialect.MariaDB53Dialect
+[2023-07-31 10:33:00.171] [INFO ] [main] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2023-07-31 10:33:00.182] [INFO ] [main] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2023-07-31 10:33:00.938] [WARN ] [main] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2023-07-31 10:33:01.755] [INFO ] [main] com.springboot.advanced_jpa.data.repository.QProductRepositoryTest Started QProductRepositoryTest in 5.54 seconds (JVM running for 7.014)
+[2023-07-31 10:33:02.196] [INFO ] [SpringApplicationShutdownHook] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Closing JPA EntityManagerFactory for persistence unit 'default'
+[2023-07-31 10:33:02.201] [INFO ] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown initiated...
+[2023-07-31 10:33:02.208] [INFO ] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown completed.
+[2023-07-31 10:33:58.664] [INFO ] [main] com.springboot.advanced_jpa.data.repository.QProductRepositoryTest Starting QProductRepositoryTest using Java 11.0.19 on BIG601-04 with PID 2636 (started by BIG601-02 in C:\Users\BIG601-02\git\JAVA-WEB\springboot\advanced_jpa)
+[2023-07-31 10:33:58.665] [INFO ] [main] com.springboot.advanced_jpa.data.repository.QProductRepositoryTest No active profile set, falling back to 1 default profile: "default"
+[2023-07-31 10:33:59.422] [INFO ] [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2023-07-31 10:33:59.494] [INFO ] [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 62 ms. Found 2 JPA repository interfaces.
+[2023-07-31 10:34:00.124] [INFO ] [main] org.hibernate.jpa.internal.util.LogHelper HHH000204: Processing PersistenceUnitInfo [name: default]
+[2023-07-31 10:34:00.194] [INFO ] [main] org.hibernate.Version HHH000412: Hibernate ORM core version 5.6.15.Final
+[2023-07-31 10:34:00.391] [INFO ] [main] org.hibernate.annotations.common.Version HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2023-07-31 10:34:00.578] [INFO ] [main] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Starting...
+[2023-07-31 10:34:00.671] [INFO ] [main] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Start completed.
+[2023-07-31 10:34:00.707] [INFO ] [main] org.hibernate.dialect.Dialect HHH000400: Using dialect: org.hibernate.dialect.MariaDB53Dialect
+[2023-07-31 10:34:01.422] [INFO ] [main] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2023-07-31 10:34:01.433] [INFO ] [main] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2023-07-31 10:34:02.282] [WARN ] [main] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2023-07-31 10:34:03.502] [INFO ] [main] com.springboot.advanced_jpa.data.repository.QProductRepositoryTest Started QProductRepositoryTest in 5.276 seconds (JVM running for 6.616)
+[2023-07-31 10:34:03.948] [INFO ] [SpringApplicationShutdownHook] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Closing JPA EntityManagerFactory for persistence unit 'default'
+[2023-07-31 10:34:03.951] [INFO ] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown initiated...
+[2023-07-31 10:34:03.957] [INFO ] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown completed.
