@@ -390,3 +390,251 @@ Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'sp
 [2023-08-08 13:33:21.716] [INFO ] [SpringApplicationShutdownHook] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Closing JPA EntityManagerFactory for persistence unit 'default'
 [2023-08-08 13:33:21.721] [INFO ] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown initiated...
 [2023-08-08 13:33:21.724] [INFO ] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown completed.
+[2023-08-08 14:14:34.406] [INFO ] [restartedMain] com.springboot.security.SecurityApplication Starting SecurityApplication using Java 17.0.7 on BIG601-04 with PID 6664 (C:\Users\BIG601-02\git\JAVA-WEB\springboot\security\target\classes started by BIG601-02 in C:\Users\BIG601-02\git\JAVA-WEB\springboot\security)
+[2023-08-08 14:14:34.407] [INFO ] [restartedMain] com.springboot.security.SecurityApplication No active profile set, falling back to default profiles: default
+[2023-08-08 14:14:34.517] [INFO ] [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2023-08-08 14:14:34.517] [INFO ] [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2023-08-08 14:14:35.783] [INFO ] [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2023-08-08 14:14:35.932] [INFO ] [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 139 ms. Found 2 JPA repository interfaces.
+[2023-08-08 14:14:37.110] [INFO ] [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 8080 (http)
+[2023-08-08 14:14:37.122] [INFO ] [restartedMain] org.apache.coyote.http11.Http11NioProtocol Initializing ProtocolHandler ["http-nio-8080"]
+[2023-08-08 14:14:37.123] [INFO ] [restartedMain] org.apache.catalina.core.StandardService Starting service [Tomcat]
+[2023-08-08 14:14:37.123] [INFO ] [restartedMain] org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.54]
+[2023-08-08 14:14:37.229] [INFO ] [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext
+[2023-08-08 14:14:37.229] [INFO ] [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 2711 ms
+[2023-08-08 14:14:37.549] [INFO ] [restartedMain] org.hibernate.jpa.internal.util.LogHelper HHH000204: Processing PersistenceUnitInfo [name: default]
+[2023-08-08 14:14:37.614] [INFO ] [restartedMain] org.hibernate.Version HHH000412: Hibernate ORM core version 5.4.32.Final
+[2023-08-08 14:14:37.776] [INFO ] [restartedMain] org.hibernate.annotations.common.Version HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2023-08-08 14:14:37.995] [INFO ] [restartedMain] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Starting...
+[2023-08-08 14:14:38.125] [INFO ] [restartedMain] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Start completed.
+[2023-08-08 14:14:38.161] [INFO ] [restartedMain] org.hibernate.dialect.Dialect HHH000400: Using dialect: org.hibernate.dialect.MariaDB53Dialect
+[2023-08-08 14:14:38.838] [INFO ] [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2023-08-08 14:14:38.846] [INFO ] [restartedMain] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2023-08-08 14:14:39.306] [WARN ] [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2023-08-08 14:14:39.783] [INFO ] [restartedMain] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+[2023-08-08 14:14:39.967] [INFO ] [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer LiveReload server is running on port 35729
+[2023-08-08 14:14:40.232] [INFO ] [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain Will secure Ant [pattern='/v2/api-docs'] with []
+[2023-08-08 14:14:40.233] [INFO ] [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain Will secure Ant [pattern='/swagger-resources/**'] with []
+[2023-08-08 14:14:40.233] [INFO ] [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain Will secure Ant [pattern='/swagger-ui.html'] with []
+[2023-08-08 14:14:40.234] [INFO ] [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain Will secure Ant [pattern='/webjars/**'] with []
+[2023-08-08 14:14:40.234] [INFO ] [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain Will secure Ant [pattern='/swagger/**'] with []
+[2023-08-08 14:14:40.234] [INFO ] [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain Will secure Ant [pattern='/sign-api/exception'] with []
+[2023-08-08 14:14:40.261] [INFO ] [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@51952687, org.springframework.security.web.context.SecurityContextPersistenceFilter@1867f63d, org.springframework.security.web.header.HeaderWriterFilter@299c3995, org.springframework.security.web.authentication.logout.LogoutFilter@2d3944e7, com.springboot.security.config.security.JwtAuthenticationFilter@4d8ca7b0, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3c0bf1c5, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2da1f322, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7a30b49e, org.springframework.security.web.session.SessionManagementFilter@2d98382a, org.springframework.security.web.access.ExceptionTranslationFilter@479dd14b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4d79ac12]
+[2023-08-08 14:14:40.311] [INFO ] [restartedMain] org.apache.coyote.http11.Http11NioProtocol Starting ProtocolHandler ["http-nio-8080"]
+[2023-08-08 14:14:40.352] [INFO ] [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port(s): 8080 (http) with context path ''
+[2023-08-08 14:14:40.353] [INFO ] [restartedMain] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Context refreshed
+[2023-08-08 14:14:40.379] [INFO ] [restartedMain] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Found 1 custom documentation plugin(s)
+[2023-08-08 14:14:40.412] [INFO ] [restartedMain] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Scanning for api listing references
+[2023-08-08 14:14:40.750] [INFO ] [restartedMain] com.springboot.security.SecurityApplication Started SecurityApplication in 6.965 seconds (JVM running for 7.859)
+[2023-08-08 14:14:58.317] [INFO ] [http-nio-8080-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2023-08-08 14:14:58.318] [INFO ] [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet Initializing Servlet 'dispatcherServlet'
+[2023-08-08 14:14:58.319] [INFO ] [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet Completed initialization in 1 ms
+[2023-08-08 14:14:58.826] [INFO ] [http-nio-8080-exec-10] com.springboot.security.config.security.JwtTokenProvider [resloveToken] Http 헤더에서 Token값 추출
+[2023-08-08 14:14:58.826] [INFO ] [http-nio-8080-exec-10] com.springboot.security.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 추출 완료. token : null
+[2023-08-08 14:14:58.826] [INFO ] [http-nio-8080-exec-10] com.springboot.security.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 유효성 체크 시작
+[2023-08-08 14:14:58.851] [INFO ] [http-nio-8080-exec-10] com.springboot.security.config.security.CustomAuthenticationEntryPoint [commence] 인증 실패로 response.sendError 발생
+[2023-08-08 14:14:58.866] [INFO ] [http-nio-8080-exec-4] com.springboot.security.config.security.JwtTokenProvider [resloveToken] Http 헤더에서 Token값 추출
+[2023-08-08 14:14:58.867] [INFO ] [http-nio-8080-exec-4] com.springboot.security.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 추출 완료. token : null
+[2023-08-08 14:14:58.867] [INFO ] [http-nio-8080-exec-4] com.springboot.security.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 유효성 체크 시작
+[2023-08-08 14:14:58.867] [INFO ] [http-nio-8080-exec-4] com.springboot.security.config.security.CustomAuthenticationEntryPoint [commence] 인증 실패로 response.sendError 발생
+[2023-08-08 14:15:29.074] [INFO ] [SpringApplicationShutdownHook] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Closing JPA EntityManagerFactory for persistence unit 'default'
+[2023-08-08 14:15:29.078] [INFO ] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown initiated...
+[2023-08-08 14:15:29.089] [INFO ] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown completed.
+[2023-08-08 14:15:33.251] [INFO ] [restartedMain] com.springboot.security.SecurityApplication Starting SecurityApplication using Java 17.0.7 on BIG601-04 with PID 12324 (C:\Users\BIG601-02\git\JAVA-WEB\springboot\security\target\classes started by BIG601-02 in C:\Users\BIG601-02\git\JAVA-WEB\springboot\security)
+[2023-08-08 14:15:33.253] [INFO ] [restartedMain] com.springboot.security.SecurityApplication No active profile set, falling back to default profiles: default
+[2023-08-08 14:15:33.368] [INFO ] [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2023-08-08 14:15:33.368] [INFO ] [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2023-08-08 14:15:34.296] [INFO ] [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2023-08-08 14:15:34.387] [INFO ] [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 81 ms. Found 2 JPA repository interfaces.
+[2023-08-08 14:15:35.195] [INFO ] [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 8080 (http)
+[2023-08-08 14:15:35.207] [INFO ] [restartedMain] org.apache.coyote.http11.Http11NioProtocol Initializing ProtocolHandler ["http-nio-8080"]
+[2023-08-08 14:15:35.208] [INFO ] [restartedMain] org.apache.catalina.core.StandardService Starting service [Tomcat]
+[2023-08-08 14:15:35.208] [INFO ] [restartedMain] org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.54]
+[2023-08-08 14:15:35.318] [INFO ] [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext
+[2023-08-08 14:15:35.319] [INFO ] [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 1950 ms
+[2023-08-08 14:15:35.605] [INFO ] [restartedMain] org.hibernate.jpa.internal.util.LogHelper HHH000204: Processing PersistenceUnitInfo [name: default]
+[2023-08-08 14:15:35.662] [INFO ] [restartedMain] org.hibernate.Version HHH000412: Hibernate ORM core version 5.4.32.Final
+[2023-08-08 14:15:35.799] [INFO ] [restartedMain] org.hibernate.annotations.common.Version HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2023-08-08 14:15:35.925] [INFO ] [restartedMain] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Starting...
+[2023-08-08 14:15:35.993] [INFO ] [restartedMain] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Start completed.
+[2023-08-08 14:15:36.023] [INFO ] [restartedMain] org.hibernate.dialect.Dialect HHH000400: Using dialect: org.hibernate.dialect.MariaDB53Dialect
+[2023-08-08 14:15:36.675] [INFO ] [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2023-08-08 14:15:36.683] [INFO ] [restartedMain] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2023-08-08 14:15:37.476] [WARN ] [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2023-08-08 14:15:37.629] [INFO ] [restartedMain] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+[2023-08-08 14:15:37.748] [INFO ] [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer LiveReload server is running on port 35729
+[2023-08-08 14:15:38.106] [INFO ] [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@435d2299, org.springframework.security.web.context.SecurityContextPersistenceFilter@17b0d8de, org.springframework.security.web.header.HeaderWriterFilter@5abf891c, org.springframework.security.web.csrf.CsrfFilter@e11373f, org.springframework.security.web.authentication.logout.LogoutFilter@6ce41c61, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@144a9eb2, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@4d325fbf, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@12de24aa, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@745974f0, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2a527770, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1b519a18, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2d1f2cf5, org.springframework.security.web.session.SessionManagementFilter@4b995362, org.springframework.security.web.access.ExceptionTranslationFilter@24227694, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@24dc899a]
+[2023-08-08 14:15:38.170] [INFO ] [restartedMain] org.apache.coyote.http11.Http11NioProtocol Starting ProtocolHandler ["http-nio-8080"]
+[2023-08-08 14:15:38.217] [INFO ] [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port(s): 8080 (http) with context path ''
+[2023-08-08 14:15:38.221] [INFO ] [restartedMain] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Context refreshed
+[2023-08-08 14:15:38.252] [INFO ] [restartedMain] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Found 1 custom documentation plugin(s)
+[2023-08-08 14:15:38.287] [INFO ] [restartedMain] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Scanning for api listing references
+[2023-08-08 14:15:38.611] [INFO ] [restartedMain] com.springboot.security.SecurityApplication Started SecurityApplication in 5.807 seconds (JVM running for 6.304)
+[2023-08-08 14:15:39.674] [INFO ] [http-nio-8080-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2023-08-08 14:15:39.674] [INFO ] [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet Initializing Servlet 'dispatcherServlet'
+[2023-08-08 14:15:39.675] [INFO ] [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet Completed initialization in 1 ms
+[2023-08-08 14:17:26.774] [INFO ] [SpringApplicationShutdownHook] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Closing JPA EntityManagerFactory for persistence unit 'default'
+[2023-08-08 14:17:26.788] [INFO ] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown initiated...
+[2023-08-08 14:17:26.795] [INFO ] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown completed.
+[2023-08-08 14:17:31.373] [INFO ] [restartedMain] com.springboot.security.SecurityApplication Starting SecurityApplication using Java 17.0.7 on BIG601-04 with PID 3076 (C:\Users\BIG601-02\git\JAVA-WEB\springboot\security\target\classes started by BIG601-02 in C:\Users\BIG601-02\git\JAVA-WEB\springboot\security)
+[2023-08-08 14:17:31.375] [INFO ] [restartedMain] com.springboot.security.SecurityApplication No active profile set, falling back to default profiles: default
+[2023-08-08 14:17:31.439] [INFO ] [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2023-08-08 14:17:31.439] [INFO ] [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2023-08-08 14:17:32.421] [INFO ] [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2023-08-08 14:17:32.515] [INFO ] [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 83 ms. Found 2 JPA repository interfaces.
+[2023-08-08 14:17:33.320] [INFO ] [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 8080 (http)
+[2023-08-08 14:17:33.332] [INFO ] [restartedMain] org.apache.coyote.http11.Http11NioProtocol Initializing ProtocolHandler ["http-nio-8080"]
+[2023-08-08 14:17:33.333] [INFO ] [restartedMain] org.apache.catalina.core.StandardService Starting service [Tomcat]
+[2023-08-08 14:17:33.333] [INFO ] [restartedMain] org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.54]
+[2023-08-08 14:17:33.436] [INFO ] [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext
+[2023-08-08 14:17:33.437] [INFO ] [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 1997 ms
+[2023-08-08 14:17:33.685] [INFO ] [restartedMain] org.hibernate.jpa.internal.util.LogHelper HHH000204: Processing PersistenceUnitInfo [name: default]
+[2023-08-08 14:17:33.737] [INFO ] [restartedMain] org.hibernate.Version HHH000412: Hibernate ORM core version 5.4.32.Final
+[2023-08-08 14:17:33.877] [INFO ] [restartedMain] org.hibernate.annotations.common.Version HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2023-08-08 14:17:33.977] [INFO ] [restartedMain] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Starting...
+[2023-08-08 14:17:34.052] [INFO ] [restartedMain] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Start completed.
+[2023-08-08 14:17:34.082] [INFO ] [restartedMain] org.hibernate.dialect.Dialect HHH000400: Using dialect: org.hibernate.dialect.MariaDB53Dialect
+[2023-08-08 14:17:34.735] [INFO ] [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2023-08-08 14:17:34.743] [INFO ] [restartedMain] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2023-08-08 14:17:35.166] [WARN ] [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2023-08-08 14:17:35.639] [INFO ] [restartedMain] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+[2023-08-08 14:17:35.765] [INFO ] [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer LiveReload server is running on port 35729
+[2023-08-08 14:17:36.007] [INFO ] [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain Will secure Ant [pattern='/v2/api-docs'] with []
+[2023-08-08 14:17:36.007] [INFO ] [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain Will secure Ant [pattern='/swagger-resources/**'] with []
+[2023-08-08 14:17:36.007] [INFO ] [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain Will secure Ant [pattern='/swagger-ui.html'] with []
+[2023-08-08 14:17:36.007] [INFO ] [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain Will secure Ant [pattern='/webjars/**'] with []
+[2023-08-08 14:17:36.007] [INFO ] [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain Will secure Ant [pattern='/swagger/**'] with []
+[2023-08-08 14:17:36.007] [INFO ] [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain Will secure Ant [pattern='/sign-api/exception'] with []
+[2023-08-08 14:17:36.039] [INFO ] [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1330f879, org.springframework.security.web.context.SecurityContextPersistenceFilter@410e3328, org.springframework.security.web.header.HeaderWriterFilter@162589b3, org.springframework.security.web.authentication.logout.LogoutFilter@5ca5de6, com.springboot.security.config.security.JwtAuthenticationFilter@7720a6b2, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2a9bc751, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1631469b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@43ff3e92, org.springframework.security.web.session.SessionManagementFilter@1242e26e, org.springframework.security.web.access.ExceptionTranslationFilter@190f58ac, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5dc0a8c1]
+[2023-08-08 14:17:36.090] [INFO ] [restartedMain] org.apache.coyote.http11.Http11NioProtocol Starting ProtocolHandler ["http-nio-8080"]
+[2023-08-08 14:17:36.132] [INFO ] [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port(s): 8080 (http) with context path ''
+[2023-08-08 14:17:36.133] [INFO ] [restartedMain] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Context refreshed
+[2023-08-08 14:17:36.156] [INFO ] [restartedMain] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Found 1 custom documentation plugin(s)
+[2023-08-08 14:17:36.184] [INFO ] [restartedMain] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Scanning for api listing references
+[2023-08-08 14:17:36.373] [INFO ] [restartedMain] com.springboot.security.SecurityApplication Started SecurityApplication in 5.459 seconds (JVM running for 5.979)
+[2023-08-08 14:36:52.692] [INFO ] [http-nio-8080-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2023-08-08 14:36:52.692] [INFO ] [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet Initializing Servlet 'dispatcherServlet'
+[2023-08-08 14:36:52.693] [INFO ] [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet Completed initialization in 1 ms
+[2023-08-08 14:36:53.082] [INFO ] [http-nio-8080-exec-1] com.springboot.security.config.security.JwtTokenProvider [resloveToken] Http 헤더에서 Token값 추출
+[2023-08-08 14:36:53.083] [INFO ] [http-nio-8080-exec-1] com.springboot.security.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 추출 완료. token : null
+[2023-08-08 14:36:53.083] [INFO ] [http-nio-8080-exec-1] com.springboot.security.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 유효성 체크 시작
+[2023-08-08 14:36:53.099] [INFO ] [http-nio-8080-exec-1] com.springboot.security.config.security.CustomAuthenticationEntryPoint [commence] 인증 실패로 response.sendError 발생
+[2023-08-08 14:36:53.116] [INFO ] [http-nio-8080-exec-5] com.springboot.security.config.security.JwtTokenProvider [resloveToken] Http 헤더에서 Token값 추출
+[2023-08-08 14:36:53.116] [INFO ] [http-nio-8080-exec-5] com.springboot.security.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 추출 완료. token : null
+[2023-08-08 14:36:53.116] [INFO ] [http-nio-8080-exec-5] com.springboot.security.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 유효성 체크 시작
+[2023-08-08 14:36:53.117] [INFO ] [http-nio-8080-exec-5] com.springboot.security.config.security.CustomAuthenticationEntryPoint [commence] 인증 실패로 response.sendError 발생
+[2023-08-08 14:59:19.985] [INFO ] [SpringApplicationShutdownHook] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Closing JPA EntityManagerFactory for persistence unit 'default'
+[2023-08-08 14:59:19.990] [INFO ] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown initiated...
+[2023-08-08 14:59:19.999] [INFO ] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown completed.
+[2023-08-08 14:59:24.270] [INFO ] [restartedMain] com.springboot.security.SecurityApplication Starting SecurityApplication using Java 17.0.7 on BIG601-04 with PID 9324 (C:\Users\BIG601-02\git\JAVA-WEB\springboot\security\target\classes started by BIG601-02 in C:\Users\BIG601-02\git\JAVA-WEB\springboot\security)
+[2023-08-08 14:59:24.271] [INFO ] [restartedMain] com.springboot.security.SecurityApplication No active profile set, falling back to default profiles: default
+[2023-08-08 14:59:24.336] [INFO ] [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2023-08-08 14:59:24.336] [INFO ] [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2023-08-08 14:59:25.416] [INFO ] [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2023-08-08 14:59:25.513] [INFO ] [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 88 ms. Found 2 JPA repository interfaces.
+[2023-08-08 14:59:26.422] [INFO ] [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 8080 (http)
+[2023-08-08 14:59:26.433] [INFO ] [restartedMain] org.apache.coyote.http11.Http11NioProtocol Initializing ProtocolHandler ["http-nio-8080"]
+[2023-08-08 14:59:26.433] [INFO ] [restartedMain] org.apache.catalina.core.StandardService Starting service [Tomcat]
+[2023-08-08 14:59:26.433] [INFO ] [restartedMain] org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.54]
+[2023-08-08 14:59:26.558] [INFO ] [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext
+[2023-08-08 14:59:26.558] [INFO ] [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 2221 ms
+[2023-08-08 14:59:26.845] [INFO ] [restartedMain] org.hibernate.jpa.internal.util.LogHelper HHH000204: Processing PersistenceUnitInfo [name: default]
+[2023-08-08 14:59:26.909] [INFO ] [restartedMain] org.hibernate.Version HHH000412: Hibernate ORM core version 5.4.32.Final
+[2023-08-08 14:59:27.062] [INFO ] [restartedMain] org.hibernate.annotations.common.Version HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2023-08-08 14:59:27.170] [INFO ] [restartedMain] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Starting...
+[2023-08-08 14:59:27.245] [INFO ] [restartedMain] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Start completed.
+[2023-08-08 14:59:27.276] [INFO ] [restartedMain] org.hibernate.dialect.Dialect HHH000400: Using dialect: org.hibernate.dialect.MariaDB53Dialect
+[2023-08-08 14:59:27.971] [INFO ] [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2023-08-08 14:59:27.978] [INFO ] [restartedMain] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2023-08-08 14:59:28.384] [WARN ] [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2023-08-08 14:59:28.827] [INFO ] [restartedMain] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+[2023-08-08 14:59:28.981] [INFO ] [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer LiveReload server is running on port 35729
+[2023-08-08 14:59:29.259] [INFO ] [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain Will secure Ant [pattern='/v2/api-docs'] with []
+[2023-08-08 14:59:29.260] [INFO ] [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain Will secure Ant [pattern='/swagger-resources/**'] with []
+[2023-08-08 14:59:29.260] [INFO ] [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain Will secure Ant [pattern='/swagger-ui.hyml'] with []
+[2023-08-08 14:59:29.260] [INFO ] [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain Will secure Ant [pattern='/webjars/**'] with []
+[2023-08-08 14:59:29.260] [INFO ] [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain Will secure Ant [pattern='/swagger/**'] with []
+[2023-08-08 14:59:29.260] [INFO ] [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain Will secure Ant [pattern='/sign-api/exception'] with []
+[2023-08-08 14:59:29.288] [INFO ] [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@64700085, org.springframework.security.web.context.SecurityContextPersistenceFilter@6001d5c8, org.springframework.security.web.header.HeaderWriterFilter@5987accd, org.springframework.security.web.authentication.logout.LogoutFilter@39a1678, com.springboot.security.config.security.JwtAuthenticationFilter@25c23539, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@60a3702f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@467ddee, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7d9c07e0, org.springframework.security.web.session.SessionManagementFilter@280b530a, org.springframework.security.web.access.ExceptionTranslationFilter@3d3b98b8, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@768a4796]
+[2023-08-08 14:59:29.334] [INFO ] [restartedMain] org.apache.coyote.http11.Http11NioProtocol Starting ProtocolHandler ["http-nio-8080"]
+[2023-08-08 14:59:29.374] [INFO ] [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port(s): 8080 (http) with context path ''
+[2023-08-08 14:59:29.377] [INFO ] [restartedMain] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Context refreshed
+[2023-08-08 14:59:29.398] [INFO ] [restartedMain] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Found 1 custom documentation plugin(s)
+[2023-08-08 14:59:29.430] [INFO ] [restartedMain] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Scanning for api listing references
+[2023-08-08 14:59:29.723] [INFO ] [restartedMain] com.springboot.security.SecurityApplication Started SecurityApplication in 5.914 seconds (JVM running for 6.416)
+[2023-08-08 14:59:29.762] [INFO ] [http-nio-8080-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2023-08-08 14:59:29.762] [INFO ] [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet Initializing Servlet 'dispatcherServlet'
+[2023-08-08 14:59:29.763] [INFO ] [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet Completed initialization in 1 ms
+[2023-08-08 14:59:29.778] [INFO ] [http-nio-8080-exec-1] com.springboot.security.config.security.JwtTokenProvider [resloveToken] Http 헤더에서 Token값 추출
+[2023-08-08 14:59:29.778] [INFO ] [http-nio-8080-exec-1] com.springboot.security.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 추출 완료. token : null
+[2023-08-08 14:59:29.779] [INFO ] [http-nio-8080-exec-1] com.springboot.security.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 유효성 체크 시작
+[2023-08-08 14:59:29.785] [INFO ] [http-nio-8080-exec-1] com.springboot.security.config.security.CustomAuthenticationEntryPoint [commence] 인증 실패로 response.sendError 발생
+[2023-08-08 14:59:29.922] [INFO ] [http-nio-8080-exec-2] com.springboot.security.config.security.JwtTokenProvider [resloveToken] Http 헤더에서 Token값 추출
+[2023-08-08 14:59:29.923] [INFO ] [http-nio-8080-exec-2] com.springboot.security.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 추출 완료. token : null
+[2023-08-08 14:59:29.923] [INFO ] [http-nio-8080-exec-2] com.springboot.security.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 유효성 체크 시작
+[2023-08-08 14:59:29.924] [INFO ] [http-nio-8080-exec-2] com.springboot.security.config.security.CustomAuthenticationEntryPoint [commence] 인증 실패로 response.sendError 발생
+[2023-08-08 14:59:30.044] [INFO ] [http-nio-8080-exec-3] com.springboot.security.config.security.JwtTokenProvider [resloveToken] Http 헤더에서 Token값 추출
+[2023-08-08 14:59:30.044] [INFO ] [http-nio-8080-exec-3] com.springboot.security.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 추출 완료. token : null
+[2023-08-08 14:59:30.045] [INFO ] [http-nio-8080-exec-3] com.springboot.security.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 유효성 체크 시작
+[2023-08-08 14:59:30.045] [INFO ] [http-nio-8080-exec-3] com.springboot.security.config.security.CustomAuthenticationEntryPoint [commence] 인증 실패로 response.sendError 발생
+[2023-08-08 14:59:30.218] [INFO ] [http-nio-8080-exec-4] com.springboot.security.config.security.JwtTokenProvider [resloveToken] Http 헤더에서 Token값 추출
+[2023-08-08 14:59:30.218] [INFO ] [http-nio-8080-exec-4] com.springboot.security.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 추출 완료. token : null
+[2023-08-08 14:59:30.218] [INFO ] [http-nio-8080-exec-4] com.springboot.security.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 유효성 체크 시작
+[2023-08-08 14:59:30.219] [INFO ] [http-nio-8080-exec-4] com.springboot.security.config.security.CustomAuthenticationEntryPoint [commence] 인증 실패로 response.sendError 발생
+[2023-08-08 14:59:30.246] [INFO ] [http-nio-8080-exec-5] com.springboot.security.config.security.JwtTokenProvider [resloveToken] Http 헤더에서 Token값 추출
+[2023-08-08 14:59:30.247] [INFO ] [http-nio-8080-exec-5] com.springboot.security.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 추출 완료. token : null
+[2023-08-08 14:59:30.247] [INFO ] [http-nio-8080-exec-5] com.springboot.security.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 유효성 체크 시작
+[2023-08-08 14:59:30.248] [INFO ] [http-nio-8080-exec-5] com.springboot.security.config.security.CustomAuthenticationEntryPoint [commence] 인증 실패로 response.sendError 발생
+[2023-08-08 14:59:39.482] [INFO ] [SpringApplicationShutdownHook] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Closing JPA EntityManagerFactory for persistence unit 'default'
+[2023-08-08 14:59:39.486] [INFO ] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown initiated...
+[2023-08-08 14:59:39.501] [INFO ] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown completed.
+[2023-08-08 14:59:43.512] [INFO ] [restartedMain] com.springboot.security.SecurityApplication Starting SecurityApplication using Java 17.0.7 on BIG601-04 with PID 2644 (C:\Users\BIG601-02\git\JAVA-WEB\springboot\security\target\classes started by BIG601-02 in C:\Users\BIG601-02\git\JAVA-WEB\springboot\security)
+[2023-08-08 14:59:43.513] [INFO ] [restartedMain] com.springboot.security.SecurityApplication No active profile set, falling back to default profiles: default
+[2023-08-08 14:59:43.590] [INFO ] [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2023-08-08 14:59:43.590] [INFO ] [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2023-08-08 14:59:44.777] [INFO ] [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2023-08-08 14:59:44.905] [INFO ] [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 115 ms. Found 2 JPA repository interfaces.
+[2023-08-08 14:59:45.852] [INFO ] [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 8080 (http)
+[2023-08-08 14:59:45.864] [INFO ] [restartedMain] org.apache.coyote.http11.Http11NioProtocol Initializing ProtocolHandler ["http-nio-8080"]
+[2023-08-08 14:59:45.867] [INFO ] [restartedMain] org.apache.catalina.core.StandardService Starting service [Tomcat]
+[2023-08-08 14:59:45.867] [INFO ] [restartedMain] org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.54]
+[2023-08-08 14:59:45.977] [INFO ] [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext
+[2023-08-08 14:59:45.977] [INFO ] [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 2386 ms
+[2023-08-08 14:59:46.274] [INFO ] [restartedMain] org.hibernate.jpa.internal.util.LogHelper HHH000204: Processing PersistenceUnitInfo [name: default]
+[2023-08-08 14:59:46.329] [INFO ] [restartedMain] org.hibernate.Version HHH000412: Hibernate ORM core version 5.4.32.Final
+[2023-08-08 14:59:46.479] [INFO ] [restartedMain] org.hibernate.annotations.common.Version HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2023-08-08 14:59:46.592] [INFO ] [restartedMain] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Starting...
+[2023-08-08 14:59:46.660] [INFO ] [restartedMain] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Start completed.
+[2023-08-08 14:59:46.692] [INFO ] [restartedMain] org.hibernate.dialect.Dialect HHH000400: Using dialect: org.hibernate.dialect.MariaDB53Dialect
+[2023-08-08 14:59:47.403] [INFO ] [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2023-08-08 14:59:47.412] [INFO ] [restartedMain] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2023-08-08 14:59:47.850] [WARN ] [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2023-08-08 14:59:48.243] [INFO ] [restartedMain] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+[2023-08-08 14:59:48.360] [INFO ] [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer LiveReload server is running on port 35729
+[2023-08-08 14:59:48.688] [INFO ] [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain Will secure Ant [pattern='/v2/api-docs'] with []
+[2023-08-08 14:59:48.688] [INFO ] [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain Will secure Ant [pattern='/swagger-resources/**'] with []
+[2023-08-08 14:59:48.688] [INFO ] [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain Will secure Ant [pattern='/swagger-ui.html'] with []
+[2023-08-08 14:59:48.688] [INFO ] [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain Will secure Ant [pattern='/webjars/**'] with []
+[2023-08-08 14:59:48.689] [INFO ] [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain Will secure Ant [pattern='/swagger/**'] with []
+[2023-08-08 14:59:48.689] [INFO ] [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain Will secure Ant [pattern='/sign-api/exception'] with []
+[2023-08-08 14:59:48.722] [INFO ] [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7952f218, org.springframework.security.web.context.SecurityContextPersistenceFilter@339243d0, org.springframework.security.web.header.HeaderWriterFilter@cdc50ec, org.springframework.security.web.authentication.logout.LogoutFilter@17302b67, com.springboot.security.config.security.JwtAuthenticationFilter@64700085, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1242e26e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@42a2865f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@25c23539, org.springframework.security.web.session.SessionManagementFilter@51646aac, org.springframework.security.web.access.ExceptionTranslationFilter@58f30766, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@608b1aef]
+[2023-08-08 14:59:48.779] [INFO ] [restartedMain] org.apache.coyote.http11.Http11NioProtocol Starting ProtocolHandler ["http-nio-8080"]
+[2023-08-08 14:59:48.819] [INFO ] [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port(s): 8080 (http) with context path ''
+[2023-08-08 14:59:48.821] [INFO ] [restartedMain] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Context refreshed
+[2023-08-08 14:59:48.844] [INFO ] [restartedMain] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Found 1 custom documentation plugin(s)
+[2023-08-08 14:59:48.871] [INFO ] [restartedMain] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Scanning for api listing references
+[2023-08-08 14:59:49.091] [INFO ] [restartedMain] com.springboot.security.SecurityApplication Started SecurityApplication in 6.055 seconds (JVM running for 6.596)
+[2023-08-08 14:59:49.544] [INFO ] [http-nio-8080-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2023-08-08 14:59:49.544] [INFO ] [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet Initializing Servlet 'dispatcherServlet'
+[2023-08-08 14:59:49.546] [INFO ] [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet Completed initialization in 2 ms
+[2023-08-08 14:59:49.977] [INFO ] [http-nio-8080-exec-3] com.springboot.security.config.security.JwtTokenProvider [resloveToken] Http 헤더에서 Token값 추출
+[2023-08-08 14:59:49.977] [INFO ] [http-nio-8080-exec-3] com.springboot.security.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 추출 완료. token : null
+[2023-08-08 14:59:49.978] [INFO ] [http-nio-8080-exec-3] com.springboot.security.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 유효성 체크 시작
+[2023-08-08 14:59:49.986] [INFO ] [http-nio-8080-exec-3] com.springboot.security.config.security.CustomAuthenticationEntryPoint [commence] 인증 실패로 response.sendError 발생
+[2023-08-08 14:59:50.013] [INFO ] [http-nio-8080-exec-6] com.springboot.security.config.security.JwtTokenProvider [resloveToken] Http 헤더에서 Token값 추출
+[2023-08-08 14:59:50.013] [INFO ] [http-nio-8080-exec-6] com.springboot.security.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 추출 완료. token : null
+[2023-08-08 14:59:50.013] [INFO ] [http-nio-8080-exec-6] com.springboot.security.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 유효성 체크 시작
+[2023-08-08 14:59:50.014] [INFO ] [http-nio-8080-exec-6] com.springboot.security.config.security.CustomAuthenticationEntryPoint [commence] 인증 실패로 response.sendError 발생
+[2023-08-08 17:41:25.966] [INFO ] [SpringApplicationShutdownHook] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Closing JPA EntityManagerFactory for persistence unit 'default'
+[2023-08-08 17:41:26.008] [INFO ] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown initiated...
+[2023-08-08 17:41:26.020] [INFO ] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown completed.
