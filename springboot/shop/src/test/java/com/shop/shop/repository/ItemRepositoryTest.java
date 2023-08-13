@@ -190,7 +190,7 @@ public void createItemList(){
         booleanBuilder.and(item.price.gt(price));
         System.out.println(ItemSellStatus.SELL);
         if(StringUtils.equals(itemSellStat, ItemSellStatus.SELL)){
-            booleanBuilder.and(item.ItemSellStatus.eq(ItemSellStatus.SELL));
+            booleanBuilder.and(item.itemSellStatus.eq(ItemSellStatus.SELL));
         }
 
 

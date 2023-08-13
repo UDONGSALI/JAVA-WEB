@@ -1,17 +1,17 @@
 package com.shop.shop.entity;
 
 import com.shop.shop.constant.ItemSellStatus;
+import com.shop.shop.dto.ItemFormDto;
 import lombok.*;
 
 import javax.persistence.*;
-import java.time.LocalDateTime;
 
 @Entity
 @Getter
 @Setter
 @ToString
 @Table(name = "item")
-public class Item {
+public class Item extends BaseEntity{
 
     @Id
     @Column(name = "itme_id")
@@ -27,7 +27,14 @@ public class Item {
     @Column(nullable = false)
     private String itemDetail;
     @Enumerated(EnumType.STRING)
-    private ItemSellStatus ItemSellStatus;
-    private LocalDateTime regTime;
-    private LocalDateTime updateTime;
+    private ItemSellStatus itemSellStatus;
+
+    public void updateItem(ItemFormDto itemFormDto) {
+        this.itemNm = itemFormDto.getItemNm();
+        this.price = itemFormDto.getPrice();
+        this.stockNumber = itemFormDto.getStockNumber();
+        this.itemDetail = itemFormDto.getItemDetail();
+        this.itemSellStatus = itemFormDto.getItemSellStatus();
+    }
+
 }
