@@ -12040,3 +12040,6 @@ org.springframework.expression.spel.SpelEvaluationException: EL1005E: Type canno
 [2023-08-13 22:36:07.182] [INFO ] [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet Initializing Servlet 'dispatcherServlet'
 [2023-08-13 22:36:07.182] [INFO ] [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet Completed initialization in 0 ms
 [2023-08-13 22:36:07.919] [WARN ] [http-nio-8080-exec-1] nz.net.ultraq.thymeleaf.layoutdialect.fragments.FragmentProcessor You don't need to put the layout:fragment/data-layout-fragment attribute into the <head> section - the decoration process will automatically copy the <head> section of your content templates into your layout page.
+[2023-08-13 22:41:39.023] [INFO ] [SpringApplicationShutdownHook] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Closing JPA EntityManagerFactory for persistence unit 'default'
+[2023-08-13 22:41:39.025] [INFO ] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown initiated...
+[2023-08-13 22:41:39.029] [INFO ] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown completed.
