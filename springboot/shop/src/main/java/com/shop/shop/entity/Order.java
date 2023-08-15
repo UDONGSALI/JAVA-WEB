@@ -9,6 +9,7 @@ import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
+
 @Entity
 @Table(name = "orders")
 @Getter
@@ -56,6 +57,13 @@ public class Order extends BaseEntity{
             totalPrice += orderItem.getTotalPrice();
         }
         return totalPrice;
+    }
+
+    public void cancelOrder() {
+        this.orderStatus = OrderStatus.CANCEL;
+        for (OrderItem orderItem : orderItems) {
+            orderItem.cancel();
+        }
     }
 
 

@@ -46,4 +46,9 @@ public class Item extends BaseEntity{
         } // 상품 재고가 주문 수량보다 적을 때 재고 부족 예외를 발생시킴
         this.stockNumber = restStock;
     }
+
+    public void addStock(int stockNumber){
+        this.stockNumber += stockNumber;  // 상품 재고를 증가시키는 메소드
+    }
+
 }

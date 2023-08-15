@@ -14,7 +14,7 @@ public interface OrderRepository extends JpaRepository<Order, Long> {
             "where  o .member.email = :email " +
             "order by o.orderDate desc"
     )
-    List<Order> findOders(@Param("email") String email, Pageable pageable); // 현재 로그인한 사용자 주문 데이터 페이징 조건에 맞춰 조회
+    List<Order> findOrders(@Param("email") String email, Pageable pageable); // 현재 로그인한 사용자 주문 데이터 페이징 조건에 맞춰 조회
 
     @Query("select  count (o) from  Order  o " +
             "where  o.member.email = :email " +
