@@ -9677,3 +9677,6 @@ Consider defining a bean of type 'com.shop.shop.service.OrderService' in your co
 [2023-08-16 02:50:57.534] [INFO ] [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet Initializing Servlet 'dispatcherServlet'
 [2023-08-16 02:50:57.534] [INFO ] [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet Completed initialization in 0 ms
 [2023-08-16 02:50:58.156] [WARN ] [http-nio-8080-exec-1] nz.net.ultraq.thymeleaf.layoutdialect.fragments.FragmentProcessor You don't need to put the layout:fragment/data-layout-fragment attribute into the <head> section - the decoration process will automatically copy the <head> section of your content templates into your layout page.
+[2023-08-16 02:53:02.718] [INFO ] [SpringApplicationShutdownHook] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Closing JPA EntityManagerFactory for persistence unit 'default'
+[2023-08-16 02:53:02.720] [INFO ] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown initiated...
+[2023-08-16 02:53:02.724] [INFO ] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown completed.
